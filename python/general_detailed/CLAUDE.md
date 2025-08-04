@@ -1,6 +1,6 @@
 # High level instructions
 
-- Write python3 language to solve tasks, using well known packages such as numpy, matplotlib, scipy, polars, scipy, keras, sympy, dataclasses, xarray, etc.
+- Write python3 language to solve tasks, using well known packages such as numpy, matplotlib, scipy, polars, scipy, keras, sympy, dataclasses, xarray, loguru, pytest, click, etc.
 - For each new task, generate a runnable .py file and run it to generate what is asked.
 - Produce high quality, safe, fast code.
 - Use only English as a language.
@@ -11,6 +11,9 @@
 Whenever possible, prefer using:
   - polars over pandas
   - xarray over netCDF4
+  - use loguru for logging and printing to serial over plain `print()```
+  - use `pytest` for testing
+  - use `click` for generating cli
 
 # Methodology choices
 
@@ -19,11 +22,13 @@ Whenever possible, prefer using:
 # Run python3 commands in dev conda env
 
 - Run commands in the 'dev' conda environment. This can be activated by using `source ~/miniconda3/bin/activate && conda activate dev` .
+- Install new packages when needed with `conda install` or `pip install` .
 
 # Check code quality
 
 - Follow the `setup.cfg` options.
 - Follow the zen of python.
+- If relevant, include unit testing.
 - Use consistent python naming conventions.
 - Remove unused code.
 - Use libraries and packages rather than re-implementing simple stuff.
