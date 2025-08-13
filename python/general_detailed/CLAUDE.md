@@ -9,11 +9,12 @@
 # Package choices
 
 Whenever possible, prefer using:
-  - polars over pandas
-  - xarray over netCDF4
-  - use loguru for logging and printing to serial over plain `print()```
+  - `polars` over `pandas`
+  - `xarray` over `netCDF4`
+  - use `loguru` for logging and printing to serial over plain `print()`
   - use `pytest` for testing
   - use `click` for generating cli
+  - use `dataclasses` for structured data
 
 # Methodology choices
 
@@ -22,7 +23,7 @@ Whenever possible, prefer using:
 # Run python3 commands in dev conda env
 
 - Run commands in the 'dev' conda environment. This can be activated by using `source ~/miniconda3/bin/activate && conda activate dev` .
-- Install new packages when needed with `conda install` or `pip install` .
+- Install new packages inside the environment when needed with `conda install` or `pip install` . Do not install anything outside of the conda env 'dev'.
 
 # Check code quality
 
