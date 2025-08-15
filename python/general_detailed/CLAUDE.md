@@ -1,5 +1,6 @@
 # High level instructions
 
+- When asked to perform a task, find the matching .md file describing the task to performed for more information. If no such file exist, do the tast as described in the prompt.
 - Write python3 language to solve tasks, using well known packages such as numpy, matplotlib, scipy, polars, scipy, keras, sympy, dataclasses, xarray, loguru, pytest, click, etc.
 - For each new task, generate a runnable .py file and run it to generate what is asked.
 - Produce high quality, safe, fast code.
