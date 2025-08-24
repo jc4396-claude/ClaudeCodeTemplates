@@ -12,6 +12,7 @@
 Whenever possible, prefer using:
   - `polars` over `pandas`
   - `xarray` over `netCDF4`
+  - use `cartopy` over `basemap`
   - use `loguru` for logging and printing to serial over plain `print()`
   - use `pytest` for testing
   - use `click` for generating cli
