@@ -6,6 +6,8 @@
 - Produce high quality, safe, fast code.
 - Use only English as a language.
 - Do not write credentials and other secrets on disk or in script and do not leak secrets.
+- Use test driven development: first write reasonable tests, then write the code, then check that the tests pass.
+- Use tests, both unit tests for each function, and integration tests for high level functionality.
 
 # Package choices
 
@@ -14,7 +16,7 @@ Whenever possible, prefer using:
   - `xarray` over `netCDF4`
   - use `cartopy` over `basemap`
   - use `pathlib` over lower level alternatives
-  - use `loguru` for logging and printing to serial over plain `print()`
+  - use `loguru` for *program and logics and debug logging* over plain `print()`; do not use loguru, but use some print or pretty print, when showing data that the user asks for (for example, plotting a list of options as per user request).
   - use `pytest` for testing
   - use `click` for generating cli
   - use `dataclasses` for structured data
@@ -32,16 +34,18 @@ Whenever possible, prefer using:
 
 - Follow the `setup.cfg` options.
 - Follow the zen of python.
-- If relevant, include unit testing.
+- If relevant, include unit testing for each new function or functionality.
 - Use consistent python naming conventions.
 - Remove unused code.
 - Use libraries and packages rather than re-implementing simple stuff.
 - Use relevant data structures, classes, and data classes, in particular dataclasses.
 - Use typing when relevant.
+- Always sanitize inputs and outputs.
 - Check the quality of the python code with the following tools from the dev env:
   - ty: `ty check FILE.py` ,
   - ruff: `ruff check FILE.py` ,
   - pylint: `pylint FILE.py` .
+  - run all tests using pytest .
 
 # Check for typos
 
