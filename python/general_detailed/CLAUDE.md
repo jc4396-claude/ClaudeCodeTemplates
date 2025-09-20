@@ -59,3 +59,6 @@ Whenever possible, prefer using:
 # Other practical guidelines
 
 - When peaking into data files, for example a CSV or XLS or similar, do not look at the full file, as this may fill your context too fast. Instead, use the `head -10` command or similar to just look at the few first lines to understand how the file works 
+- Think about where it is best to save the scripts you work on. For example, if there is a folder containing specific files to work on, put the script in the corresponding folder. But if the folder has a very specific name like "data", consider putting the script in the parent folder. Think a bit about what makes most sense so that scripts are in good locations.
+- When committing into git, add files individually and make sure to add only the files corresponding to the work done in the present discussion thread - there may be more claude agents working in parallel in different threads, dont add their code instead of them.
+- Before and after doing a task, think a bit about what you are asked to do - if it does not make sense, or you think what is asked is flawed, or you think something better could be done, let the user know and suggest alternatives and ask what the user wants to do before actually doing something.
