@@ -55,3 +55,7 @@ Whenever possible, prefer using:
 
 - Write code that is pythonic and simple.
 - Take a refactoring iteration before running the code.
+
+# Other practical guidelines
+
+- When peaking into data files, for example a CSV or XLS or similar, do not look at the full file, as this may fill your context too fast. Instead, use the `head -10` command or similar to just look at the few first lines to understand how the file works 
